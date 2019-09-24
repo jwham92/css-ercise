@@ -1,0 +1,32 @@
+.head {
+  background: rgb(251,251,63);
+  background: radial-gradient(circle, rgba(251,251,63,1) 0%, rgba(255,141,53,1) 100%);
+  height: 100px;
+  width: 100px;
+  /*border: 4px solid #ffc500;*/
+  border-radius: 50%;
+}
+
+.eye {
+  background-color: #6b2000;
+  height: 26px;
+  width: 13px;
+  border-radius: 50%;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.eyes {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(25px, -70px);
+}
+
+@keyframes blink {
+  0% { height: 0px; }
+  10% { height: 26px; }
+  90% { height: 26px; }
+  100% { height: 0px; }
+}
